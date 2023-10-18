@@ -10,8 +10,8 @@
 }
 body {
   font-family: Montserrat, sans-serif;
-  background-color: #09131b;
-  color: #ffffff;
+  background-color: #c7ddd9;
+  color: #224050;
   line-height: 1.6;
 }
 body.loading {
@@ -75,7 +75,7 @@ a{
 /** -------------------------------------------------- HEADER -------------------------------------------------- **/
 
 .header {
-  background: #122331;
+  background: #224050;
   position: fixed;
   top: 0;
   left: 0;
@@ -156,7 +156,7 @@ li.nohover:hover{
 .dropdown-menu,
 .menu-right {
   position: absolute;
-  background: #122331;
+  background: #224050;
   width: 100%;
   top: 50px;
   left: 0;
@@ -196,7 +196,7 @@ li.nohover:hover{
   border-top: 1px solid #c5c5c5;
 }
 .mega-menu .content {
-  background: #122331;
+  background: #224050;
   padding: 1rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -336,7 +336,7 @@ li.nohover:hover{
 		max-width: 350px;
 		top: 100%;
 		left: 0;
-		background: #122331;
+		background: #224050;
 		display: block;
 		padding: 1rem;
 		line-height: 3rem;
@@ -442,7 +442,7 @@ li.nohover:hover{
 /** -------------------------------------------------- FOOTER -------------------------------------------------- **/
 
 footer{
-	background-color: #122331;
+	background-color: #224050;
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -453,7 +453,7 @@ footer{
 .containerFooter {
     width: 100%;
     padding: 50px 0;
-    background-color: #122331;
+    background-color: #224050;
     display: flex;
     justify-content: space-evenly;
 }
@@ -673,7 +673,7 @@ footer{
 .encartPictoCitation{
 	width: 60%;
 	margin: 80px auto 120px auto;
-	background-color: #122331;
+	background-color: #224050;
 	display: flex;
 	align-items: center;
 	border-radius: 10px;
@@ -741,12 +741,12 @@ footer{
   background-color: #09131b;
 }
 .histoireBloc:hover{
-  background-color: #122331;
-  border-color: #122331;
+  background-color: #224050;
+  border-color: #224050;
 }
 .ressourcesBloc:hover{
-  background-color: #122331;
-  border-color: #122331;
+  background-color: #224050;
+  border-color: #224050;
 }
 .histoireBloc:after, .ressourcesBloc:after {
   content: '+';
@@ -777,12 +777,12 @@ footer{
   transform: rotate(180deg);
 }
 .histoireBloc.activeBloc{
-  background-color: #122331;
-  border-color: #122331;
+  background-color: #224050;
+  border-color: #224050;
 }
 .ressourcesBloc.activeBloc{
-  background-color: #122331;
-  border-color: #122331;
+  background-color: #224050;
+  border-color: #224050;
 }
 .activeContentBloc {
     display: flex;
@@ -803,7 +803,7 @@ footer{
     width: fit-content;
     max-width: 100%;
     padding: 10px;
-    border-left: 1px solid #122331;
+    border-left: 1px solid #224050;
     display: flex;
     align-items: center;
     font-size: 12px;
@@ -812,7 +812,7 @@ footer{
     margin: 10px 10px 10px 0;
 }
 .encartRessource:hover {
-    background-color: #122331;
+    background-color: #224050;
     transition: 0.2s ease-in-out;
     border-left-color: #c5c5c5;
 }
@@ -875,7 +875,7 @@ footer{
   align-items: center;
 }
 .accordion-header:hover {
-  background-color: #122331;
+  background-color: #224050;
 }
 .triangle {
   margin-right: 5px;
@@ -1147,7 +1147,7 @@ p.customBlue {
     background: #243645;
     opacity: 1;
     transition: opacity .2s;
-    border: 1px solid #122331;
+    border: 1px solid #224050;
     border-radius: 15px;
     height: 5px;
 }
@@ -1156,9 +1156,9 @@ p.customBlue {
   width: 15px;
   height: 15px;
   border-radius: 50px;
-  background: #122331;
+  background: #224050;
   cursor: pointer;
-  border: 2px solid #122331;
+  border: 2px solid #224050;
 }
 
 .containerInputLabel input[type="number"] {
@@ -1206,7 +1206,7 @@ p.customBlue {
 }
 
 .containerDatasFix th {
-    background-color: #122331;
+    background-color: #224050;
 }
 
 @media screen and (max-width: 600px){
@@ -1232,7 +1232,7 @@ p.customBlue {
     margin: 20px 0 100px 0;
   }
   .filter-buttons button {
-    background-color: #122331;
+    background-color: #224050;
     color: #C5C5C5;
     border: 1px solid #000000;
     box-shadow: 5px 5px 5px #000000;
@@ -1248,7 +1248,7 @@ p.customBlue {
   }
   .filter-buttons button.disabled {
     background-color: #09131b;
-    border-color: #122331;
+    border-color: #224050;
     box-shadow: none;
     cursor: pointer;
   }
@@ -1264,7 +1264,7 @@ p.customBlue {
   }
   .slider-container h2{
     text-align: left;
-    border-bottom: 1px solid #122331;
+    border-bottom: 1px solid #224050;
   }
   .slick-track{
     display: flex;
@@ -1291,7 +1291,7 @@ p.customBlue {
     margin: 20px auto;
     text-align: center;
     width: 60%;
-    border-bottom: 1px solid #122331;
+    border-bottom: 1px solid #224050;
   }
   .cardTitle{
     margin: 20px;
