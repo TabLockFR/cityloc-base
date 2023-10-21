@@ -2,3 +2,171 @@
 layout: header_base
 title: Cityloc - Offres
 ---
+
+    <div class="headerRecherches">
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Rechercher...">
+        </div>
+        <button class="add-offer">+ Ajouter une offre</button>
+    </div>
+
+
+    <div class="thumbnails">
+        <div class="thumbnail">
+            <img src="https://tablockfr.github.io/cityloc-base/imgs/produit1.jpg" alt="Offre 1">
+            <div class="overlay">
+                <h3>Tondeuse</h3>
+                <p>Description de l'offre 1...</p>
+                <div class="btnAdd">Réserver</div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://tablockfr.github.io/cityloc-base/imgs/produit2.jpg" alt="Offre 1">
+            <div class="overlay">
+                <h3>Rasoir</h3>
+                <p>Description de l'offre 2...</p>
+                <div class="btnAdd">Réserver</div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://tablockfr.github.io/cityloc-base/imgs/produit3.jpg" alt="Offre 1">
+            <div class="overlay">
+                <h3>Ponceuse à bande</h3>
+                <p>Description de l'offre 3...</p>
+                <div class="btnAdd">Réserver</div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://tablockfr.github.io/cityloc-base/imgs/produit4.jpg" alt="Offre 1">
+            <div class="overlay">
+                <h3>VTT</h3>
+                <p>Description de l'offre 4...</p>
+                <div class="btnAdd">Réserver</div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://tablockfr.github.io/cityloc-base/imgs/produit5.jpg" alt="Offre 1">
+            <div class="overlay">
+                <h3>Karcher</h3>
+                <p>Description de l'offre 5...</p>
+                <div class="btnAdd">Réserver</div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://tablockfr.github.io/cityloc-base/imgs/produit6.jpg" alt="Offre 1">
+            <div class="overlay">
+                <h3>Perceuse à colonne</h3>
+                <p>Description de l'offre 6...</p>
+                <div class="btnAdd">Réserver</div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://tablockfr.github.io/cityloc-base/imgs/produit7.jpg" alt="Offre 1">
+            <div class="overlay">
+                <h3>Perceuse</h3>
+                <p>Description de l'offre 7...</p>
+                <div class="btnAdd">Réserver</div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://tablockfr.github.io/cityloc-base/imgs/produit8.jpg" alt="Offre 1">
+            <div class="overlay">
+                <h3>Thermomix</h3>
+                <p>Description de l'offre 8...</p>
+                <div class="btnAdd">Réserver</div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://tablockfr.github.io/cityloc-base/imgs/produit9.jpg" alt="Offre 1">
+            <div class="overlay">
+                <h3>Appareil à raclette 2 personnes</h3>
+                <p>Description de l'offre 9...</p>
+                <div class="btnAdd">Réserver</div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://tablockfr.github.io/cityloc-base/imgs/produit10.jpg" alt="Offre 1">
+            <div class="overlay">
+                <h3>Remorque 2m de long</h3>
+                <p>Description de l'offre 10...</p>
+                <div class="btnAdd">Réserver</div>
+            </div>
+        </div>
+        <!-- Ajoutez d'autres vignettes ici -->
+    </div>
+
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-button">&times;</span>
+            <img src="" id="lightbox-image" alt="Offre">
+            <h3 id="lightbox-title">Titre de l'offre</h3>
+            <p id="lightbox-description">Description de l'offre...</p>
+            <button class="reserve-button" id="lightbox-reserve">Réserver</button>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const searchInput = document.getElementById("search-input");
+    const thumbnails = document.querySelectorAll(".thumbnail");
+    const lightbox = document.querySelector(".lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+    const lightboxTitle = document.getElementById("lightbox-title");
+    const lightboxDescription = document.getElementById("lightbox-description");
+    const lightboxReserve = document.getElementById("lightbox-reserve");
+    const lightboxCloseButton = document.querySelector(".close-button");
+
+    searchInput.addEventListener("input", function () {
+        const searchTerm = searchInput.value.trim().toLowerCase();
+
+        thumbnails.forEach(function (thumbnail) {
+            const title = thumbnail.querySelector("h3").textContent.toLowerCase();
+            const description = thumbnail.querySelector("p").textContent.toLowerCase();
+
+            if (title.includes(searchTerm) || description.includes(searchTerm)) {
+                thumbnail.classList.remove("filtered");
+            } else {
+                thumbnail.classList.add("filtered");
+            }
+        });
+    });
+
+    thumbnails.forEach(function (thumbnail) {
+        thumbnail.addEventListener("click", function () {
+            const title = thumbnail.querySelector("h3").textContent;
+            const description = thumbnail.querySelector("p").textContent;
+            const imageSrc = thumbnail.querySelector("img").src;
+
+            lightboxImage.src = imageSrc;
+            lightboxTitle.textContent = title;
+            lightboxDescription.textContent = description;
+
+            lightbox.style.display = "flex";
+        });
+    });
+
+    lightboxCloseButton.addEventListener("click", function () {
+        closeLightbox();
+    });
+
+    lightbox.addEventListener("click", function (event) {
+        if (event.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    function closeLightbox() {
+        lightbox.style.display = "none";
+    }
+});
+
+
+
+
+</script>
