@@ -801,16 +801,13 @@ footer{
   }
   .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
     transition: .2s ease-in-out;
-    background: #22405059;
+    //background: #22405059;
     color: #ffffff00;
     cursor: pointer;
   }
-  .slick-slide img{
-    width: 100%;
-  }
   @media screen and (max-width: 600px){
 	  .sliderAccueil{
-		  width: 90%;
+		  width: 100%;
 	  }
   }
 
