@@ -909,42 +909,158 @@ footer{
 
 /** -------------------------------------------------- PAGES CONTENT -------------------------------------------------- **/
 
-/* GLOSSAIRE */
-
-.searchContainer {
-	margin: 20px 0 20px 20px;
-	text-align: left;
-}
-
-#searchInput {
+#search-input {
     padding: 10px;
     width: 90%;
     max-width: 90%;
     font-size: 16px;
     background: none;
     border: none;
-    border: 2px solid #09131b;
-    box-shadow: 5px 5px 10px #000000;
-    border-radius: 15px;
-    color: #ffffff;
+    border-bottom: 1px solid #224050;
+    color: #224050;
     outline: none;
-    margin-bottom: 50px;
 }
 
-#definitionList li {
-	display: block;
-	margin-bottom: 20px;
-}
+    .headerRecherches {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .search-bar {
+        width: 75%;
+    }
+    .add-offer {
+        width: 25%;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .thumbnails {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .thumbnail {
+        width: calc(50% - 30px);
+        margin: 15px;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        transition: box-shadow 0.3s;
+        height: 200px;
+    }
+    .thumbnail img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .thumbnail.filtered {
+        display: none;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        color: #fff;
+        padding: 10px;
+        overflow: hidden;
+        transition: opacity 0.3s;
+    }
+    .overlay h3 {
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .overlay p{
+        opacity: 0;
+        transition: ease-in-out 0.2s;
+    }
+    .overlay:hover{
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .overlay:hover p{
+        opacity : 1;
+        transition: ease-in-out 0.2s;
+    }
+    .lightbox {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+    }
+    .lightbox-content {
+        background: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+    }
+    .close-button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .lightbox img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 15px;
+    }
+    .reserve-button {
+        background-color: #224050;
+        border: 1px solid #224050;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: ease-in-out 0.2s;
+    }
+    .reserve-button:hover {
+        background-color: #34637d;
+        transition: ease-in-out 0.2s;
+    }
 
-#definitionList h2 {
-	font-size: 20px;
-	margin-bottom: 10px;
-	margin-top: 40px;
-	text-align: left;
-	color: #4694D4;
-}
-
-#definitionList p {
-	font-size: 16px;
-	margin: 0;
-}
+    .btnAdd {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        background: #224050;
+        border: 1px solid #224050;
+        color: #ffffff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s, border 0.3s, color 0.3s;
+        opacity: 0;
+        transition: ease-in-out 0.2s;
+    }
+    .overlay:hover .btnAdd{
+        opacity: 1;
+        transition: ease-in-out 0.2s;
+    }
+    .btnAdd:hover {
+        background: #34637d;
+    }
+    @media (min-width: 768px) {
+        .thumbnail {
+            width: calc(25% - 30px);
+        }
+    }
