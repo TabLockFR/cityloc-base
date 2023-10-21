@@ -965,6 +965,7 @@ footer{
         cursor: pointer;
         transition: box-shadow 0.3s;
         max-height: 200px;
+        height: fit-content;
     }
     .thumbnail img {
         width: 100%;
