@@ -883,12 +883,13 @@ footer{
 		flex-direction: row-reverse;
 		text-align: left;
 		align-items: center;
+		margin-: 150px 0;
 	}
 	.container-gd{
 		flex-direction: row;
 		text-align: left;
 		align-items: center;
-		margin-: 150px, 0;
+		margin-: 150px 0;
 	}
 	.bloc-un-dg{
 		width: 50%;
