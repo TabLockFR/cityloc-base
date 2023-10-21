@@ -7,6 +7,8 @@ title: TabLock
   .containerBoxAccueil{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   .boxOffres, .boxDemandes {
     display: flex;
@@ -53,6 +55,11 @@ title: TabLock
     cursor: pointer;
   }
 
+  @media screen and (min-width: 1080px){
+    .containerBoxAccueil{
+      flex-direction: row;
+    }
+  }
 
   
 </style>
