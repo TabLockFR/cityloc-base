@@ -923,6 +923,7 @@ footer{
 
     .headerRecherches {
         display: flex;
+        flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center;
         padding: 10px;
@@ -932,7 +933,7 @@ footer{
         margin-bottom: 50px;
     }
     .add-offer {
-        width: 25%;
+        width: auto;
         background-color: #007bff;
         color: #fff;
         border: none;
@@ -1069,12 +1070,10 @@ footer{
         .thumbnail {
             width: calc(25% - 30px);
         }
-    }
-    @media (min-width: 768px) {
         .headerRecherches {
-            flex-direction: column-reverse;
+            flex-direction: row;
         }
         .add-offer{
-            width: auto;
+            width: 25%;
         }
     }
