@@ -83,6 +83,7 @@ title: TabLock
 
 
 
+<!-- OFFRES & DEMANDES -->
 
 <div class="containerBoxAccueil">
   <div class="boxOffres">
@@ -97,7 +98,35 @@ title: TabLock
   </div>
 </div>
 <div class="traitSeparation"></div>
+
+<!-- SLIDER -->
+
+<div class="sliderAccueil">
+  <div>
+    <p>Carte 1</p>
+  </div>
+  <div>
+    <p>Carte 2</p>
+  </div>
+  <div>
+    <p>Carte 3</p>
+  </div>
+</div>
+
+<!-- TEAM -->
+
 <h2>L'équipe Cityloc</h2>
 <div class="imgAccueilTeam">
   <img src="https://tablockfr.github.io/cityloc-base/imgs/team_cityloc.jpg" alt="équipe Cityloc">
 </div>
+
+
+<script>
+  $(document).ready(function(){
+    $('.sliderAccueil').slick({
+      autoplay: true, // Activer l'autoplay
+      arrows: true, // Afficher les flèches de navigation
+      dots: true // Afficher les indicateurs de pagination
+    });
+  });
+</script>
