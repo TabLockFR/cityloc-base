@@ -383,7 +383,7 @@ li.nohover:hover{
 		max-height: 100%;
 		transform: scaleY(1);
 	}
-	
+	/*
 	a.expand-btn::after{
 		content:' +';
 	}
@@ -391,7 +391,7 @@ li.nohover:hover{
 	a.open::after{
 		content:' -';
 	}
-	
+	*/
 	.expandable li {
 		margin: 0;
 	}
