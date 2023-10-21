@@ -1056,8 +1056,8 @@ footer{
 
     .btnAdd {
         position: absolute;
-        bottom: 30px;
-        right: 30px;
+        bottom: 15px;
+        right: 15px;
         background: #224050;
         border: 1px solid #224050;
         color: #ffffff;
