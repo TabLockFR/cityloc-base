@@ -12,7 +12,7 @@ title: TabLock
   }
   .boxOffres, .boxDemandes {
     display: flex;
-    margin: 50px;
+    margin: 20px 50px;
     padding: 5px 30px;
     border-radius: 25px;
     width: 300px;
@@ -57,10 +57,24 @@ title: TabLock
     transition: ease-in-out 0.2s;
     cursor: pointer;
   }
+  .traitSeparation{
+    width: 35%;
+    border: 1px solid #224050;
+    margin: 50px auto;
+  }
+  .imgAccueilTeam{
+    text-align: center;
+  }
+  .imgAccueilTeam img{
+    width: 100%;
+  }
 
   @media screen and (min-width: 1080px){
     .containerBoxAccueil{
       flex-direction: row;
+    }
+    .imgAccueilTeam img{
+      width: 80%;
     }
   }
 
@@ -82,5 +96,8 @@ title: TabLock
     </a>
   </div>
 </div>
+<div class="traitSeparation"></div>
 <h2>L'équipe Cityloc</h2>
-<img src="https://tablockfr.github.io/imgs/team_cityloc.jpg" alt="équipe Cityloc">
+<div class="imgAccueilTeam">
+  <img src="https://tablockfr.github.io/cityloc-base/imgs/team_cityloc.jpg" alt="équipe Cityloc">
+</div>
