@@ -6,15 +6,47 @@ title: TabLock
 
   .containerBoxAccueil{
     display: flex;
+    justify-content: center;
   }
-
-  .boxOffres{
+  .boxOffres, .boxDemandes {
     display: flex;
+    margin: 50px;
+    padding: 5px 30px;
+    border-radius: 25px;
+    width: 300px;
+    justify-content: center;
   }
-
+  .boxOffres {
+    background-color: #224050;
+    border: 1px solid #224050;
+  }
   .boxDemandes{
-    display: flex;
+    background-color: #558880;
+    border: 3px solid #558880;
   }
+  .boxOffres p, .boxDemandes p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  .boxOffres:hover{
+    background-color: #ffffff;
+    transition: ease-in-out 0.2s;
+  }
+  .boxOffres:hover p{
+    color: #224050;
+    transition: ease-in-out 0.2s;
+  }
+  .boxDemandes:hover{
+    background-color: #ffffff;
+    transition: ease-in-out 0.2s;
+  }
+  .boxDemandes:hover p{
+    color: #558880;
+    transition: ease-in-out 0.2s;
+  }
+
+
   
 </style>
 
