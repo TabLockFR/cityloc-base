@@ -828,25 +828,17 @@ footer{
 .container-dg{
 	display: -webkit-flex;
 	flex-direction: column;	
-	//align-items: center;
-	text-align: center;
-	width: 100vw;
-	position: relative;
-	margin-left: -50vw;
-	left: 50%;
+	align-items: center;
+	margin-: 50px, 0;
 }
 
 /* ---- BLOC IMG GAUCHE TXT DROITE PUIS HAUT BAS ---- */
 
 .container-gd{
 	display: -webkit-flex;
-	flex-direction: column;	
-	//align-items: center;
-	text-align: center;
-	width: 100vw;
-	position: relative;
-	margin-left: -50vw;
-	left: 50%;
+	flex-direction: column;
+	algin-items: center;
+	margin-: 50px, 0;
 }
 .bloc-un-dg{
 	display: flex;
@@ -859,6 +851,7 @@ footer{
 .flex-fix {
 	min-height: 0;
 	min-width: 0;
+	max-width: 100%;
 }
 .bloc-deux-dg{
 	width: 100%;
@@ -895,6 +888,7 @@ footer{
 		flex-direction: row;
 		text-align: left;
 		align-items: center;
+		margin-: 150px, 0;
 	}
 	.bloc-un-dg{
 		width: 50%;
