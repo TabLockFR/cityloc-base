@@ -935,7 +935,7 @@ footer{
     .add-offer {
         width: auto;
         background-color: #558880;
-	border: 1px solid #558880;
+	border: 3px solid #558880;
         color: #fff;
         border: none;
         padding: 10px;
@@ -943,10 +943,12 @@ footer{
         cursor: pointer;
         margin-bottom: 50px;
         transition: ease-in-out 0.2s;
+        font-weight: 600;
     }
     .add-offer:hover {
         background-color: #ffffff;
         color: #558880;
+	border: 3px solid #558880;
         transition: ease-in-out 0.2s;
     }
     .thumbnails {
