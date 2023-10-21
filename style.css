@@ -929,6 +929,7 @@ footer{
     }
     .search-bar {
         width: 75%;
+        margin-bottom: 50px;
     }
     .add-offer {
         width: 25%;
@@ -938,6 +939,7 @@ footer{
         padding: 10px;
         border-radius: 5px;
         cursor: pointer;
+        margin-bottom: 50px;
     }
     .thumbnails {
         display: flex;
@@ -952,7 +954,7 @@ footer{
         position: relative;
         cursor: pointer;
         transition: box-shadow 0.3s;
-        height: 200px;
+        max-height: 200px;
     }
     .thumbnail img {
         width: 100%;
@@ -994,6 +996,7 @@ footer{
     .lightbox {
         display: none;
         position: fixed;
+        padding: 20px;
         top: 0;
         left: 0;
         width: 100%;
@@ -1002,6 +1005,9 @@ footer{
         justify-content: center;
         align-items: center;
         z-index: 2;
+    }
+    h3#lightbox-title{
+        color: #224050;
     }
     .lightbox-content {
         background: #fff;
@@ -1062,5 +1068,13 @@ footer{
     @media (min-width: 768px) {
         .thumbnail {
             width: calc(25% - 30px);
+        }
+    }
+    @media (min-width: 768px) {
+        .headerRecherches {
+            flex-direction: column-reverse;
+        }
+        .add-offer{
+            width: auto;
         }
     }
