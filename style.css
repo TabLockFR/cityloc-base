@@ -712,7 +712,7 @@ footer{
 /* SLIDER */
 
   .sliderAccueil{
-    width: 80%;
+    width: 100%;
     margin: auto;
   }
   .sliderAccueil h2{
@@ -724,33 +724,36 @@ footer{
   }
   .card{
     margin: 20px;
+    padding: 20px;
     box-shadow: 5px 5px 5px #000000;
-    border: 1px solid #000000;
+    //border: 1px solid #000000;
     border-radius: 15px;
     transition: 0.3s ease-in-out;
+    background-color: #224050;
   }
   .card:hover{
     transform: scale(1.05);
   }
-  .cardLink{
-    text-decoration: none;
+  .headerCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
-  .cardImg{
-    max-width: 100%;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+  .headerCard img {
+    width: 50px;
+    margin-right: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
   }
-  .cardDate{
-    margin: 20px auto;
-    text-align: center;
-    width: 60%;
-    border-bottom: 1px solid #224050;
+  .headerCard span {
+    color: #a6d8a0;
   }
-  .cardTitle{
-    margin: 20px;
-    text-decoration: none;
-    overflow: hidden;
-    text-align: center;
+  .cardContent p {
+    color: #fff;
+    text-align: left;
+  }
+  p.nameAvis {
+    font-style: italic;
   }
   .slick-prev, .slick-next {
     z-index: 0;
@@ -776,9 +779,9 @@ footer{
     position: absolute;
     width: 20px;
     height: 20px;
-    border-left: 3px solid #fff;
+    border-left: 3px solid #224050;
     display: inline-block;
-    border-top: 3px solid #fff;
+    border-top: 3px solid #224050;
     transform: rotate(-45deg);
     top: calc(50% - 10px);
     left: 18px;
@@ -789,16 +792,16 @@ footer{
     position: absolute;
     width: 20px;
     height: 20px;
-    border-right: 3px solid #fff;
+    border-right: 3px solid #224050;
     display: inline-block;
-    border-top: 3px solid #fff;
+    border-top: 3px solid #224050;
     transform: rotate(45deg);
     top: calc(50% - 10px);
     right: 18px;
   }
   .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
     transition: .2s ease-in-out;
-    background: #00000059;
+    background: #22405059;
     color: #ffffff00;
     cursor: pointer;
   }
