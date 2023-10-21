@@ -693,6 +693,13 @@ footer{
     border: 1px solid #224050;
     margin: 50px auto;
   }
+  .imgAccueilObjectifs{
+    text-align: center;
+    margin: 100px 0;
+  }
+  .imgAccueilObjectifs img{
+    width: 100%;
+  }
   .imgAccueilTeam{
     text-align: center;
   }
